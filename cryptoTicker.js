@@ -50,8 +50,7 @@ function App() {
   return (
     <CryptosWrapper>
       <TickerWrap>
-        {cryptos &&
-          cryptos.map((crypto, index) => {
+        {cryptos?.map((crypto, index) => {
             return (
               <CryptoWrapper key={index}>
                 <Heading>{crypto.symbol}/USD</Heading>
